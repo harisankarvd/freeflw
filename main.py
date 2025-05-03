@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 # Constants
 TOKEN = '8051065968:AAHNC7qlJoMnxu5MP10O-xeQ8HZGHNV-LaU'
 DB = 'db.sqlite'
-QR_IMAGE = 'https://t.me/plinkkkkkkkkk/55'
+QR_IMAGE = 'https://t.me/plinkkkkkkkkk/56'
 
 # States
 SELECT_TYPE_STATE, SELECT_OFFER_STATE, ASK_USERNAME, ASK_PHONE, ASK_TXID = range(5)
