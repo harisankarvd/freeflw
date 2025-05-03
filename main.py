@@ -62,19 +62,19 @@ def init_db():
         cursor.execute("SELECT COUNT(*) FROM offers")
         if cursor.fetchone()[0] == 0:
             offers_data = [
-                (1, 'Followers', 'Indian Followers', 'https://t.me/plinkkkkkkkkk/42'),
-                (2, 'Followers', 'Indian Followers', 'https://t.me/plinkkkkkkkkk/43'),
-                (3, 'Followers', 'Indian Followers', 'https://t.me/plinkkkkkkkkk/44'),
-                (4, 'Followers', 'Malayali Followers', 'https://t.me/plinkkkkkkkkk/45'),
-                (5, 'Followers', 'Malayali Followers', 'https://t.me/plinkkkkkkkkk/46'),
-                (6, 'Followers', 'Malayali Followers', 'https://t.me/plinkkkkkkkkk/47'),
-                (7, 'Followers', 'Standard Followers', 'https://t.me/plinkkkkkkkkk/48'),
-                (8, 'Followers', 'Standard Followers', 'https://t.me/plinkkkkkkkkk/49'),
-                (9, 'Followers', 'Standard Followers', 'https://t.me/plinkkkkkkkkk/50'),
-                (10, 'Views', 'Standard Views', 'https://t.me/plinkkkkkkkkk/52'),
-                (11, 'Views', 'Standard Views', 'https://t.me/plinkkkkkkkkk/51'),
-                (12, 'Likes', 'Regular Likes', 'https://t.me/plinkkkkkkkkk/54'),
-                (13, 'Likes', 'Regular Likes', 'https://t.me/plinkkkkkkkkk/53')
+                (1, 'Followers', 'Indian Followers 100', 'https://t.me/plinkkkkkkkkk/42'),
+                (2, 'Followers', 'Indian Followers 500', 'https://t.me/plinkkkkkkkkk/43'),
+                (3, 'Followers', 'Indian Followers 1000', 'https://t.me/plinkkkkkkkkk/44'),
+                (4, 'Followers', 'Malayali Followers 100', 'https://t.me/plinkkkkkkkkk/45'),
+                (5, 'Followers', 'Malayali Followers 500', 'https://t.me/plinkkkkkkkkk/46'),
+                (6, 'Followers', 'Malayali Followers 1000', 'https://t.me/plinkkkkkkkkk/47'),
+                (7, 'Followers', 'Standard Followers 100', 'https://t.me/plinkkkkkkkkk/48'),
+                (8, 'Followers', 'Standard Followers 500', 'https://t.me/plinkkkkkkkkk/49'),
+                (9, 'Followers', 'Standard Followers 1000', 'https://t.me/plinkkkkkkkkk/50'),
+                (10, 'Views', 'Standard Views 1k', 'https://t.me/plinkkkkkkkkk/52'),
+                (11, 'Views', 'Standard Views 10k', 'https://t.me/plinkkkkkkkkk/51'),
+                (12, 'Likes', 'Regular Likes 1k', 'https://t.me/plinkkkkkkkkk/54'),
+                (13, 'Likes', 'Regular Likes 10k', 'https://t.me/plinkkkkkkkkk/53')
             ]
             cursor.executemany("INSERT INTO offers (id, type, name, img) VALUES (?, ?, ?, ?)", offers_data)
             db.commit()
